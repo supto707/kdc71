@@ -199,20 +199,37 @@ p.abt {
 footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  min-width: 600px;
   background-color: #f9f9f9;
-  text-align: center;
   display: flex;
-  flex-direction: column;
-  
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
 }
+
 
 /* Add styles for small screens */
 @media only screen and (max-width: 767px) {
-  footer {
-      width: 90%;
-      margin: auto;
-  }
+    footer {
+        max-width: 90%;
+        min-width: 80%;
+    }
+}
+
+/* Add styles for medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    footer {
+        max-width: 95%;
+        min-width: 90%;
+    }
+}
+
+/* Add styles for large screens */
+@media only screen and (min-width: 992px) {
+    footer {
+        max-width: 1200px;
+        min-width: 1000px;
+    }
 }
 
 
